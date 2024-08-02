@@ -35,7 +35,7 @@ function OTPVerification({ onSuccess }) {
       })
     ); // Store OTP data in local storage
     axios
-      .post("https://admin-panel-backend-indol.vercel.app", {
+      .post("https://admin-panel-backend-indol.vercel.app/sendOTP", {
         email,
         otp: generatedOTP,
       })
